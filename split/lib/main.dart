@@ -67,8 +67,31 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
 
-        //Tuwanie ==================
+        //Tuwanie =================
+           child: Container(
+           
+           alignment: Alignment.center,
+           decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.all(
+              Radius.circular(20.0),
+              ),
+              boxShadow: [
+             new  BoxShadow(
+                color: Colors.red,
+                offset: new Offset(10.0, 10.0),
+                blurRadius: 15.0
+              )
+              ]
+           ),
+        
+          width: 300,
+          height: 200,
+          
 
+          
+        )
+      ,),
 
 
 
@@ -81,7 +104,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
        // TaJa ======================
       
-      ), 
-    );
+      );
   }
 }
