@@ -64,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
 
         title: Text(widget.title),
-      ),
-      body: Center(
+       ),
+       body: Center(
 
         //Tuwanie ==================
 
@@ -74,10 +74,24 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
         //Jinn ======================
+        
+        child:Container(
+          decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(16),
+          boxShadow:[
+            new BoxShadow(
+              color: Colors.black,
+              offset: Offset(6.0, 6.0),
+              blurRadius: 16
+            )]
+          ),
+          height: 226,
+          width: 218,
 
-
-
-
+          ),
+        
+        
 
        // TaJa ======================
       
