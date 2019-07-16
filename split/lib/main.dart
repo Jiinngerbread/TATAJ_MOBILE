@@ -11,6 +11,7 @@ void main() {
     }
     
   ));
+  runApp(Tabs());
 }
 
 class Dashboard extends StatelessWidget {
@@ -84,7 +85,6 @@ class Goals extends StatelessWidget {
     );
   }
 }
-
 
  class Tabs extends StatelessWidget {
   @override
