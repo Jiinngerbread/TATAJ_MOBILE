@@ -6,11 +6,11 @@ void main() {
   ));
 }
 
-class HomePage extends StatelessWidget {
+class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("SPLIT"), backgroundColor: Colors.deepOrange),
+      appBar: new AppBar(title: new Text("Dashboard"), backgroundColor: Colors.deepOrange),
       body: new Container(
         child: new Center(
           child: new Column(
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 iconSize: 70.0,
                 onPressed: null
               ),
-              new Text("")
+              new Text("Dash")
             ]
           )
         )
@@ -30,5 +30,29 @@ class HomePage extends StatelessWidget {
   
 
 
+  }
+}
+
+class Profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Profile"), backgroundColor: Colors.deepOrange),
+      body: new Container(
+        child: new Center(
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new IconButton(
+                icon: new Icon(Icons.portrait , color: Colors.blueGrey),
+                iconSize: 70.0,
+                onPressed: null
+              ),
+              new Text("Profile")
+            ]
+          )
+        )
+      )
+    );
   }
 }
