@@ -13,7 +13,8 @@ void main() {
       "/Goals": (BuildContext context) => new Goals()
     }    
   ));
-  runApp(Tabs());
+ 
+ /* runApp(Tabs());
 }
  class Tabs extends StatelessWidget {
   @override
@@ -44,5 +45,5 @@ void main() {
         ),
       ),
     );
-  }
+  } */
 }
