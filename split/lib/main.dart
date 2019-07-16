@@ -11,7 +11,7 @@ void main() {
     }
     
   ));
-  runApp(Tabs());
+  
 }
 
 class Dashboard extends StatelessWidget {
