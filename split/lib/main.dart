@@ -9,6 +9,7 @@ void main() {
       "/Profile": (BuildContext context) => new Profile(),
       "/Goals": (BuildContext context) => new Goals()
     }
+    
   ));
 }
 
@@ -80,6 +81,37 @@ class Goals extends StatelessWidget {
           )
         )
       )
+    );
+  }
+}
+
+
+ class Tabs extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            bottom: TabBar(
+              tabs: [
+                Tab(icon: Icon(Icons.home)),
+                Tab(icon: Icon(Icons.portrait)),
+                Tab(icon: Icon(Icons.favorite)),
+              ],
+            ),
+            title: Text('SPLIT'),
+          ),
+          /*body: TabBarView(
+            children: [
+              Icon(Icons.home),
+              Icon(Icons.portrait),
+              Icon(Icons.favorite),
+            ],
+          ),*/
+        ),
+      ),
     );
   }
 }
