@@ -4,6 +4,8 @@ void main() {
   runApp(new MaterialApp(
     home: new Dashboard(),
     routes: <String, WidgetBuilder> {
+      // For home page its automatically defined as: 
+      // "/":(BuildContext context) => new Dashboard(),
       "/Profile": (BuildContext context) => new Profile(),
       "/Goals": (BuildContext context) => new Goals()
     }
@@ -21,9 +23,9 @@ class Dashboard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new IconButton(
-                icon: new Icon(Icons.favorite, color: Colors.redAccent),
+                icon: new Icon(Icons.home, color: Colors.blue),
                 iconSize: 70.0,
-                onPressed: null
+                onPressed: () {Navigator.of(context).pushNamed("/Profile");}
               ),
               new Text("Dash")
             ]
@@ -50,7 +52,7 @@ class Profile extends StatelessWidget {
               new IconButton(
                 icon: new Icon(Icons.portrait , color: Colors.blueGrey),
                 iconSize: 70.0,
-                onPressed: null
+                onPressed: () {Navigator.of(context).pushNamed("/Goals");}
               ),
               new Text("Profile")
             ]
@@ -72,7 +74,7 @@ class Goals extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new IconButton(
-                icon: new Icon(Icons.games , color: Colors.blueGrey),
+                icon: new Icon(Icons.favorite , color: Colors.redAccent),
                 iconSize: 70.0,
                 onPressed: null
               ),
