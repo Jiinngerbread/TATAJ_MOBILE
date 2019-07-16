@@ -103,6 +103,7 @@ class Goals extends StatelessWidget {
             ),
             title: Text('SPLIT'),
           ),
+          
           /*body: TabBarView(
             children: [
               Icon(Icons.home),
@@ -110,6 +111,7 @@ class Goals extends StatelessWidget {
               Icon(Icons.favorite),
             ],
           ),*/
+
         ),
       ),
     );
