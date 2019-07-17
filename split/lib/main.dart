@@ -13,12 +13,8 @@ void main() {
       "/Goals": (BuildContext context) => new Goals()
     }    
   ));
-<<<<<<< HEAD
-  
-=======
  
- /* runApp(Tabs());
->>>>>>> e7bdcb20c833060666fbee9fda30e38a982ad61a
+ runApp(Tabs());
 }
  class Tabs extends StatelessWidget {
   @override
@@ -38,16 +34,16 @@ void main() {
             title: Text('SPLIT'),
           ),
           
-          /*body: TabBarView(
+          body: TabBarView(
             children: [
-              Icon(Icons.home),
-              Icon(Icons.portrait),
-              Icon(Icons.favorite),
+              Profile(),
+              Goals(),
+              Dashboard(),
             ],
-          ),*/
+          ),
 
         ),
       ),
     );
-  } */
+  } 
 }
