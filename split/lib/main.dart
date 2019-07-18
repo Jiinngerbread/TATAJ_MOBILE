@@ -2,11 +2,13 @@ import 'package:access/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
-
+import 'screens/dashboard.dart';
 void main() {
   runApp(new MaterialApp(
-    home: new SplashScreen(),
     debugShowCheckedModeBanner : false,
+    home: new SplashScreen(),
+    
+    
     routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
@@ -15,7 +17,7 @@ void main() {
     }    
   ));
  
- runApp(Tabs());
+ /*runApp(Tabs());
 }
  class Tabs extends StatelessWidget {
   @override
@@ -47,5 +49,5 @@ void main() {
         ),
       ),
     );
-  } 
+  } */
 }

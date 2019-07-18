@@ -1,13 +1,16 @@
 import 'package:access/screens/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 
 
 
 class LoginPage extends StatelessWidget{
   @override
+  
   Widget build(BuildContext context){
-    return new Scaffold(
+    
+    return new Scaffold(      
+      resizeToAvoidBottomPadding: false,
       appBar: new AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,),
@@ -32,7 +35,8 @@ class LoginPage extends StatelessWidget{
                 padding: 
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
                   child: new TextField(
-                    decoration: new InputDecoration(labelText: 'Email or Username'),
+                    autofocus: true,
+                    decoration: new InputDecoration(focusColor: Colors.blue,labelText: 'Email or Username',hoverColor: Colors.blue),
                   ),
               ),
               new SizedBox(
@@ -46,13 +50,16 @@ class LoginPage extends StatelessWidget{
                     decoration: new InputDecoration(labelText:"Password"),  
                   ),                  
               ),
-              new Row(
+              new Column(
+                children: <Widget>[
+               Row(                
                 mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                        left: 20.0 , right: 5.0, top: 10.0),
+                        left: 100.0 , right:100.0, top: 10.0),
                         child: GestureDetector( 
                           onTap: (){
                             Navigator.push(context, MaterialPageRoute(
@@ -63,26 +70,28 @@ class LoginPage extends StatelessWidget{
                         child: new Container(
                           alignment: Alignment.center,
                           height: 60.0,
+                          
                           decoration: new BoxDecoration(
-                            color: Colors.lightBlueAccent,
-                            borderRadius: new BorderRadius.circular(9.0)),
+                            color: const Color(0xFF003366),
+                            borderRadius: new BorderRadius.circular(30.0)),
                             child: new Text("Login",
                             style: new TextStyle(fontSize: 20.0, color: Colors.white
                             ))),
                             ),
                           ),                          
                       ),
-                      Expanded(
-                        child: Padding(
+                ]),
+                new Row(                                    
+                    children:[ Padding(
                           padding: const EdgeInsets.only(
-                            left: 10.0, right: 20.0, top: 10.0),
+                            left: 130.0, right: 20.0, top: 10.0),
                             child: new Container(
                               alignment: Alignment.center,
                               height: 60.0,
                               child: new Text("Forgot Password?",
                                 style: new TextStyle(
-                                  fontSize: 17.0, color: Colors.blueAccent))),                                              )
-                            ),                
+                                  fontSize: 12.0, color: Colors.blueAccent))),                                              )
+                     ] ),              
                           
                         ],
                       ),
@@ -93,15 +102,16 @@ class LoginPage extends StatelessWidget{
                             Padding(
                               padding: const EdgeInsets.only(bottom: 18.0),
                               child: new Text("Sign Up", style: new TextStyle(
-                                fontSize: 17.0, color: Colors.lightBlueAccent,fontWeight: FontWeight.bold)),
+                                fontSize: 17.0, color: const Color(0xFF003366),fontWeight: FontWeight.bold)),
                             ),
                           ],
                         ),
                       )
                     ],
           ),
-        ),
-      );
+        ));
+    
+      
        
   }
 }

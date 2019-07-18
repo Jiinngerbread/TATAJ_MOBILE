@@ -30,7 +30,7 @@ class SplashingScreen extends State<Screen> {
   void initState() {
     
     super.initState();
-    Timer(Duration(seconds: 10), () =>  Navigator.push(context, MaterialPageRoute(
+    Timer(Duration(seconds: 5), () =>  Navigator.push(context, MaterialPageRoute(
                               builder: (context) => LoginPage())));
   }
     @override
