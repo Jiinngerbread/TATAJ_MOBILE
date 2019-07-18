@@ -36,9 +36,9 @@ void main() {
           
           body: TabBarView(
             children: [
-              Profile(),
-              Goals(),
               Dashboard(),
+              Goals(),
+              Profile(),
             ],
           ),
 

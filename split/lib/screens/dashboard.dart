@@ -13,13 +13,20 @@ import 'package:flutter/material.dart';
               new IconButton(
                 icon: new Icon(Icons.home, color: Colors.blue),
                 iconSize: 70.0,
-                onPressed: () {Navigator.of(context).pushNamed("/Profile");}
+                onPressed: () {Navigator.of(context).pushNamed("/Goals");}
               ),
               new Text("Dash")
             ]
           )
         )
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+       onPressed: () {
+         Navigator.of(context).pushNamed("/Goals");
+        },
+      child: Icon(Icons.add),
+      backgroundColor: Colors.pink,
+    ),
     );
   }
 }
