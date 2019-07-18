@@ -27,8 +27,9 @@ void main() {
             bottom: TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.home)),
-                Tab(icon: Icon(Icons.portrait)),
                 Tab(icon: Icon(Icons.favorite)),
+                Tab(icon: Icon(Icons.portrait)),
+                
               ],
             ),
             title: Text('SPLIT'),

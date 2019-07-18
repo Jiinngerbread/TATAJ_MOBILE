@@ -57,9 +57,9 @@ class MyTabState extends State<Tabs> with SingleTickerProviderStateMixin {
             controller: controller,
             tabs: <Tab>[ 
               new Tab(icon: new Icon(Icons.home)),
-              new Tab(icon: new Icon(Icons.portrait)),
-              new Tab(icon: new Icon(Icons.favorite))
-            ]         
+              new Tab(icon: new Icon(Icons.favorite)),
+              new Tab(icon: new Icon(Icons.portrait)),  
+            ] 
           )
         ),
         
