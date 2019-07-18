@@ -1,11 +1,12 @@
+import 'package:access/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'screens/dashboard.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
 
 void main() {
   runApp(new MaterialApp(
-    home: new Dashboard(),
+    home: new SplashScreen(),
+    debugShowCheckedModeBanner : false,
     routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
