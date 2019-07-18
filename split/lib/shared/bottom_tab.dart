@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:access/screens/profile.dart' as second;
+import 'package:access/screens/profile.dart';
 import 'package:access/screens/dashboard.dart' as first;
+import 'package:access/screens/dashboard.dart';
 import 'package:access/screens/goals.dart' as third;
+import 'package:access/screens/goals.dart';
 
 
 void main() {
