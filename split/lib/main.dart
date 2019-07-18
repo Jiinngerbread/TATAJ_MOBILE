@@ -15,7 +15,7 @@ void main() {
     }    
   ));
  
- /* runApp(Tabs());
+ runApp(Tabs());
 }
  class Tabs extends StatelessWidget {
   @override
@@ -28,23 +28,24 @@ void main() {
             bottom: TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.home)),
-                Tab(icon: Icon(Icons.portrait)),
                 Tab(icon: Icon(Icons.favorite)),
+                Tab(icon: Icon(Icons.portrait)),
+                
               ],
             ),
             title: Text('SPLIT'),
           ),
           
-          /*body: TabBarView(
+          body: TabBarView(
             children: [
-              Icon(Icons.home),
-              Icon(Icons.portrait),
-              Icon(Icons.favorite),
+              Dashboard(),
+              Goals(),
+              Profile(),
             ],
-          ),*/
+          ),
 
         ),
       ),
     );
-  } */
+  } 
 }

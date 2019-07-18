@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:access/shared/goal_grid.dart';
   class GoalSingle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,7 @@ import 'package:flutter/material.dart';
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new IconButton(
-                icon: new Icon(Icons.home, color: Colors.blue),
-                iconSize: 70.0,
-                onPressed: () {Navigator.of(context).pushNamed("/Profile");}
-              ),
-              new Text("Single Goals")
+              GoalGrid()
             ]
           )
         )
