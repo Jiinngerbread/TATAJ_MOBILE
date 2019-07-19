@@ -10,12 +10,12 @@ void main() {
     home: new SplashScreen(),
     
     
-    routes: <String, WidgetBuilder> {
+    /*routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
       "/Profile": (BuildContext context) => new Profile(),
       "/Goals": (BuildContext context) => new Goals()
-    }    
+    } */   
   ));
  
  /*runApp(Tabs());
