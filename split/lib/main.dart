@@ -2,6 +2,9 @@ import 'package:access/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
+import 'screens/splash_screen.dart';
+import 'screens/dashboard.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
   runApp(new MaterialApp(
