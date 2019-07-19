@@ -8,14 +8,15 @@ class GoalGrid extends StatelessWidget {
     return GridView.count(
           // Create a grid with 2 columns. If you change the scrollDirection to
           // horizontal, this produces 2 rows.
+          scrollDirection: Axis.horizontal,
           crossAxisCount: 2,
           padding: EdgeInsets.all(20.0),
           // Generate 100 widgets that display their index in the List.
-          children: List.generate(100, (index) {
+          children: List.generate(6, (index) {
             return Center(
                         child: Card(
                           child: InkWell(
-                            splashColor: Colors.blue.withAlpha(30),
+                            splashColor: Colors.indigo[900].withAlpha(30),
                             onTap: () {
                               print('Card tapped.');
                             },
