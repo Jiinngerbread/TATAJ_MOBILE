@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:access/screens/splash_screen.dart';
 import 'package:access/screens/profile.dart' as second;
 import 'package:access/screens/dashboard.dart' as first;
 import 'package:access/screens/goals.dart' as third;
+import 'package:access/screens/profile.dart';
+import 'package:access/screens/dashboard.dart';
+import 'package:access/screens/goals.dart';
 
 
 void main() {
   runApp(new MaterialApp(
-    home: new Tabs(),
+      home: new SplashScreen(),
     routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
@@ -14,6 +18,7 @@ void main() {
       "/Goals": (BuildContext context) => new Goals()
     }   
   ));
+  Tabs();
 }
 
 class Tabs extends StatefulWidget {
