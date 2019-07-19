@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Dashboard"), backgroundColor: Colors.deepOrange),
+      appBar: new AppBar(title: new Text("Dashboard"), backgroundColor: Colors.deepPurpleAccent),
       body: new Container(
         child: new Center(
           child: new Column(
