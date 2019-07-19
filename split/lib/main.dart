@@ -2,10 +2,11 @@ import 'package:access/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
-import 'screens/dashboard.dart';
+import 'screens/registration.dart';
+
 void main() {
   runApp(new MaterialApp(
-    debugShowCheckedModeBanner : false,
+    debugShowCheckedModeBanner: false,
     home: new SplashScreen(),
     
     

@@ -1,6 +1,6 @@
 import 'package:access/screens/dashboard.dart';
 import 'package:flutter/material.dart';
-
+import 'registration.dart';
 
 
 
@@ -12,9 +12,10 @@ class LoginPage extends StatelessWidget{
     return new Scaffold(      
       resizeToAvoidBottomPadding: false,
       appBar: new AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.lightBlue[50],
         elevation: 0.0,),
         body: Container(
+          decoration: BoxDecoration(color: Colors.lightBlue[50]),
           width: double.infinity,
           child: new Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -72,7 +73,7 @@ class LoginPage extends StatelessWidget{
                           height: 60.0,
                           
                           decoration: new BoxDecoration(
-                            color: const Color(0xFF003366),
+                            color: Colors.blueAccent,
                             borderRadius: new BorderRadius.circular(30.0)),
                             child: new Text("Login",
                             style: new TextStyle(fontSize: 20.0, color: Colors.white
@@ -100,11 +101,18 @@ class LoginPage extends StatelessWidget{
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(bottom: 18.0),
-                              child: new Text("Sign Up", style: new TextStyle(
-                                fontSize: 17.0, color: const Color(0xFF003366),fontWeight: FontWeight.bold)),
+                              
+                              padding: const EdgeInsets.only(bottom: 20.0),
+                              child: GestureDetector(
+                               onTap: (){
+                              Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => SignUp()
+                              ));
+                          },child:
+                          new Text("Sign Up", style: new TextStyle(
+                                fontSize: 17.0, color: Colors.blueAccent,fontWeight: FontWeight.bold)),
                             ),
-                          ],
+                            )],
                         ),
                       )
                     ],
