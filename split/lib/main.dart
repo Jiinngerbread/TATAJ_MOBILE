@@ -1,15 +1,17 @@
-import 'package:access/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
 import 'screens/splash_screen.dart';
-import 'screens/dashboard.dart';
+
+
 //import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
   runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: new SplashScreen(),
-    debugShowCheckedModeBanner : false,
+    
+    
     routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
@@ -18,7 +20,7 @@ void main() {
     }    
   ));
  
- runApp(Tabs());
+ /*runApp(Tabs());
 }
  class Tabs extends StatelessWidget {
   @override
@@ -50,5 +52,5 @@ void main() {
         ),
       ),
     );
-  } 
+  } */
 }

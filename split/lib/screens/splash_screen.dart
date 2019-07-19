@@ -30,7 +30,7 @@ class SplashingScreen extends State<Screen> {
   void initState() {
     
     super.initState();
-    Timer(Duration(seconds: 10), () =>  Navigator.push(context, MaterialPageRoute(
+    Timer(Duration(seconds: 4), () =>  Navigator.push(context, MaterialPageRoute(
                               builder: (context) => LoginPage())));
   }
     @override
@@ -40,6 +40,7 @@ class SplashingScreen extends State<Screen> {
           fit: StackFit.expand,
           children: <Widget>[
             Container(
+              decoration: BoxDecoration(color:Colors.lightBlue[50]),
               child: Column(              
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
