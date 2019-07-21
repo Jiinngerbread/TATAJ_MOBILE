@@ -13,8 +13,8 @@ void main() {
     routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
-      "/Profile": (BuildContext context) => new Profile(),
-      "/Goals": (BuildContext context) => new Goals()
+      //"/Profile": (BuildContext context) => new Profile(),
+      //"/Goals": (BuildContext context) => new Goals()
     }   
   ));
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:access/shared/goal_grid.dart';
+//import 'package:access/shared/goal_grid.dart';
 
 
   
@@ -20,7 +20,7 @@ static const List<Widget> _widgetOptions = <Widget>[
      'Index 2: School',
      style: optionStyle,
   ),
-];
+]; 
 
   @override
   Widget build(BuildContext context) {

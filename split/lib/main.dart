@@ -4,18 +4,28 @@ import 'screens/goals.dart';
 import 'screens/splash_screen.dart';
 import 'screens/create_goal.dart';
 
+//import 'package:cloud_firestore/cloud_firestore.dart';
+
 void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     home: new CreateGoal(),
     
     
+<<<<<<< HEAD
   /*   routes: <String, WidgetBuilder> {
+=======
+    /*routes: <String, WidgetBuilder> {
+>>>>>>> 1e91f5e70a5bc6602a807ce4b3a5eb4260d4bb74
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
       "/Profile": (BuildContext context) => new Profile(),
       "/Goals": (BuildContext context) => new Goals()
+<<<<<<< HEAD
     }     */
+=======
+    } */   
+>>>>>>> 1e91f5e70a5bc6602a807ce4b3a5eb4260d4bb74
   ));
  
  /*runApp(Tabs());
