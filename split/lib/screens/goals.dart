@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:access/shared/goal_grid.dart';
+import 'package:access/screens/create_goal.dart';
 
 class Goals extends StatelessWidget {
   @override
@@ -12,12 +13,17 @@ class Goals extends StatelessWidget {
         )
       ),
       floatingActionButton: FloatingActionButton(
-       onPressed: () {
-         Navigator.of(context).pushNamed("/Goals");
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+             builder: (context) => CreateGoal()
+            )
+          );
         },
-      child: Icon(Icons.add),
-      backgroundColor: Colors.pink,
-    ),
+        child: Icon(Icons.add),
+        backgroundColor: Colors.pink,
+      ),
     );
   }
 }
