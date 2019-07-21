@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'screens/profile.dart';
 import 'screens/goals.dart';
 import 'screens/splash_screen.dart';
-
+import 'screens/create_goal.dart';
 
 void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: new SplashScreen(),
+    home: new CreateGoal(),
     
     
-    routes: <String, WidgetBuilder> {
+  /*   routes: <String, WidgetBuilder> {
       // For home page its automatically defined as: 
       // "/":(BuildContext context) => new Dashboard(),
       "/Profile": (BuildContext context) => new Profile(),
       "/Goals": (BuildContext context) => new Goals()
-    }    
+    }     */
   ));
  
  /*runApp(Tabs());
