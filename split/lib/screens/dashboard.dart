@@ -20,13 +20,6 @@ import 'package:flutter/material.dart';
           )
         )
       ),
-      floatingActionButton: FloatingActionButton(
-       onPressed: () {
-         Navigator.of(context).pushNamed("/Goals");
-        },
-      child: Icon(Icons.add),
-      backgroundColor: Colors.pink,
-    ),
     );
   }
 }
