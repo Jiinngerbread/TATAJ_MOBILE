@@ -9,7 +9,7 @@ import 'screens/create_goal.dart';
 void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: new CreateGoal(),
+    home: new SplashScreen()
     
     
   /*   routes: <String, WidgetBuilder> {
