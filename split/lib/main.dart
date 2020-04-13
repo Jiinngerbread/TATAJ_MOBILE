@@ -8,7 +8,20 @@ import 'screens/splash_screen.dart';
 
 
 void main() {
-  runApp(new MyApp());
+  runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: new SplashScreen()
+    
+    
+     routes: <String, WidgetBuilder> {
+      // For home page its automatically defined as: 
+      // "/":(BuildContext context) => new Dashboard(),
+      "/Profile": (BuildContext context) => new Profile(),
+      "/Goals": (BuildContext context) => new Goals()
+    }     
+  ));
+ 
+  runApp(Tabs());
 }
 
 class MyApp extends StatelessWidget {
