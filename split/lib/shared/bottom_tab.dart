@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:access/screens/profile.dart' as second;
-import 'package:access/screens/profile.dart';
-import 'package:access/screens/dashboard.dart' as first;
-import 'package:access/screens/dashboard.dart';
-import 'package:access/screens/goals.dart' as third;
-import 'package:access/screens/goals.dart';
+//import 'package:access/screens/profile.dart' as second;
+import 'package:access/profile/profile_screen.dart' as second;
+//import 'package:access/screens/profile.dart';
+//import 'package:access/screens/dashboard.dart' as first;
+import 'package:access/screens/resource_center.dart' as third;
+//import 'package:access/screens/dashboard.dart';
+import 'package:access/screens/goal.dart' as first;
 
 
+
+
+/*
 void main() {
   runApp(new MaterialApp(
     home: new Tabs(),
@@ -18,6 +22,7 @@ void main() {
     }   
   ));
 }
+*/
 
 class Tabs extends StatefulWidget {
   @override
@@ -44,18 +49,10 @@ class MyTabState extends State<Tabs> with SingleTickerProviderStateMixin {
     @override
     Widget build(BuildContext context) {
       return new Scaffold(
-        /*appBar: new AppBar(
-          bottom: new TabBar (
-            controller: controller,
-            tabs: <Tab>[
-              new Tab(icon: new Icon(Icons.home)),
-              new Tab(icon: new Icon(Icons.portrait))
-            ],
-          )
-        ),*/
         
         bottomNavigationBar: new Material(
-          color: Colors.tealAccent,
+          color: Color(0xFF0D47A1),
+          //color: Colors.tealAccent,
           child: new TabBar(
             controller: controller,
             tabs: <Tab>[ 
@@ -69,40 +66,13 @@ class MyTabState extends State<Tabs> with SingleTickerProviderStateMixin {
         body: new TabBarView(
           controller: controller,
           children: <Widget>[
-            new first.Dashboard(),
-            new second.Profile(),
-            new third.Goals()
+            //new first.Dashboard(),
+            new first.GoalDash(),
+            new second.ProfileApp(),
+            new third.Resource_center(),
           ]
         )
       );
     }
   }
 
-    /*Widget build(BuildContext context) {
-      return MaterialApp(
-        home: DefaultTabController(
-          length: 3,
-          child: Scaffold(
-            appBar: AppBar(
-              bottom: TabBar(
-                tabs: [
-                  Tab(icon: Icon(Icons.home)),
-                  Tab(icon: Icon(Icons.portrait)),
-                  Tab(icon: Icon(Icons.favorite)),
-                ],
-              ),
-              title: Text('SPLIT'),
-            ),
-            
-            /*body: TabBarView(
-              children: [
-                Icon(Icons.home),
-                Icon(Icons.portrait),
-                Icon(Icons.favorite),
-              ],
-            ),*/
-
-          ),
-        ),
-      );
-    } */

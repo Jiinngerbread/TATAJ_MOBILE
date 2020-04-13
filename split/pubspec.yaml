@@ -20,15 +20,37 @@ dependencies:
   
   flutter:
     sdk: flutter
- 
-
+    
+  cloud_firestore: ^0.12.7
+  firebase_core: ^0.4.0+6
+  firebase_database: ^3.0.4
+  google_sign_in: 4.0.4
+  firebase_auth:  ^0.11.1
+  datetime_picker_formfield: ^0.1.8
+  fluttertoast: ^3.1.0
+  image_picker: 0.6.0+17
+  shared_preferences: 0.5.3+4
+  firebase_storage: 3.0.3
+  cached_network_image: ^1.1.0
+  firebase_messaging: 5.1.2
+  flutter_local_notifications: ^0.8.0
+  
+  intro_views_flutter: ^2.6.0
+    
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  font_awesome_flutter: ^8.5.0
+  intl: ^0.15.7 
+  percent_indicator: ^2.1.1
+  sticky_headers: ^0.1.8
+  
+
 
 dev_dependencies:
   flutter_test: 
     sdk: flutter
+
 
 
 # For information on the generic Dart part of this file, see the
@@ -44,12 +66,93 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/splitlogo.png
-     - assets/group-of-people-doing-yoga-hd.jpg
-     - assets/paradise.jpg
-     - assets/macbook.jpg
-     - assets/graduation.jpg
-     - assets/anything.jpg
+    - assets/splitlogo.png
+    - assets/group-of-people-doing-yoga-hd.jpg
+    - assets/paradise.jpg
+    - assets/macbook.jpg
+    - assets/graduation.jpg
+    - assets/anything.jpg
+    - assets/anything.jpg
+    - assets/graduation.jpg
+    - assets/group-of-people-doing-yoga-hd.jpg
+    - assets/macbook.jpg
+    - assets/paradise.jpg
+    - assets/splitlogo.png
+    - assets/images/emma-watson.jpg
+    - assets/images/microphone.png
+    - assets/images/wallet.png
+    - assets/images/joystick.png
+    - assets/images/owl.png
+    - assets/images/book1.gif
+    - assets/images/book2.gif
+    - assets/images/book3.gif
+    - assets/images/book4.gif
+    - assets/images/splitlogo_icon.png
+    - assets/images/midas_card.png
+    - assets/images/split_card.png
+    - assets/images/split_card_orange.jpeg
+    - assets/images/split_card_new_black.png
+    - assets/like.png
+    - assets/contract.png
+    - assets/air-hostess.png
+    - assets/accountdetails.png
+    - assets/images/quote_quality.jpg
+    - assets/images/savings_quote2.jpg
+    - assets/images/img_not_available.jpeg
+    - assets/images/mimi1.gif
+    - assets/images/mimi2.gif
+    - assets/images/mimi3.gif
+    - assets/images/mimi4.gif
+    - assets/images/mimi5.gif
+    - assets/images/mimi6.gif
+    - assets/images/mimi7.gif
+    - assets/images/mimi8.gif
+    - assets/images/mimi9.gif   
+
+  fonts:
+    - family: Themify
+      fonts:
+        - asset: assets/fonts/themify.ttf
+    - family: LineAwesome
+      fonts:
+        - asset: assets/fonts/line-awesome.ttf
+    - family: Timeburner
+      fonts:
+        - asset: assets/fonts/timeburnernormal.ttf
+        - asset: assets/fonts/timeburnerbold.ttf
+          weight: 700
+    - family: ic_peer
+      fonts:
+        - asset: assets/fonts/ic_peer.ttf
+    - family: ic_group_master
+      fonts:
+        - asset: assets/fonts/ic_group_master.ttf
+    - family: ic_personal_money.ttf
+      fonts:
+        - asset: assets/fonts/ic_personal_money.ttf
+    - family: ic_team_money_black
+      fonts:
+        - asset: assets/fonts/ic_team_money_black.ttf
+    - family: ic_investment_filled
+      fonts:
+        - asset: assets/fonts/ic_investment_filled.ttf
+    - family: Fontello
+      fonts:
+        - asset: assets/fonts/fontello.ttf
+    - family: RaleWay
+      fonts: 
+        - asset: assets/Fonts/Raleway/Raleway-Black.ttf
+        - asset: assets/Fonts/Raleway/Raleway-BlackItalic.ttf
+        - asset: assets/Fonts/Raleway/Raleway-Bold.ttf
+        - asset: assets/Fonts/Raleway/Raleway-BoldItalic.ttf
+        - asset: assets/Fonts/Raleway/Raleway-ExtraBold.ttf
+        - asset: assets/Fonts/Raleway/Raleway-ExtraBoldItalic.ttf
+        - asset: assets/Fonts/Raleway/Raleway-ExtraLight.ttf
+        - asset: assets/Fonts/Raleway/Raleway-ExtraLightItalic.ttf
+        - asset: assets/Fonts/Raleway/Raleway-Light.ttf
+        - asset: assets/Fonts/Raleway/Raleway-LightItalic.ttf
+    
+        
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

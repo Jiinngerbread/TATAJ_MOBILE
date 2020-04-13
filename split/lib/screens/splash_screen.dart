@@ -1,3 +1,4 @@
+import 'package:access/screens/goal.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dashboard.dart';
@@ -9,8 +10,9 @@ class SplashScreen extends StatelessWidget {
     return new MaterialApp(
       title: 'Generated App',
       theme: new ThemeData(
-        primarySwatch: Colors.pink,
-        primaryColor: const Color(0xFFe91e63),
+        primarySwatch: Colors.blue,
+        //primaryColor: const Color(0xFFe91e63),
+        primaryColor: const Color(0xFF0D47A1),
         accentColor: const Color(0xFF6c5656),
         canvasColor: const Color(0xFFfafafa),
       ),
@@ -81,12 +83,7 @@ class SplashingScreen extends State<Screen> {
       ]
     )
   ); 
-       
-                     
-            
-            
-                   
-                
+                               
       
     }
   

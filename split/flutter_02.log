@@ -1,0 +1,123 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter packages get
+
+## exception
+
+YamlException: Error on line 29, column 3: Duplicate mapping key.
+   ╷
+29 │   intro_views_flutter:
+   │   ^^^^^^^^^^^^^^^^^^^
+   ╵
+
+```
+#0      Loader._loadMapping (package:yaml/src/loader.dart:165:9)
+#1      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#2      Loader._loadMapping (package:yaml/src/loader.dart:163:19)
+#3      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#4      Loader._loadDocument (package:yaml/src/loader.dart:62:20)
+#5      Loader.load (package:yaml/src/loader.dart:54:20)
+#6      loadYamlDocument (package:yaml/yaml.dart:51:25)
+#7      loadYamlNode (package:yaml/yaml.dart:42:5)
+#8      loadYaml (package:yaml/yaml.dart:34:5)
+#9      FlutterManifest.createFromString (package:flutter_tools/src/flutter_manifest.dart:38:28)
+#10     FlutterManifest.createFromPath (package:flutter_tools/src/flutter_manifest.dart:32:12)
+#11     FlutterProject._readManifest (package:flutter_tools/src/project.dart:167:54)
+#12     FlutterProject.fromDirectory (package:flutter_tools/src/project.dart:45:38)
+#13     FlutterProject.fromPath (package:flutter_tools/src/project.dart:60:50)
+#14     PackagesGetCommand.usageValues (package:flutter_tools/src/commands/packages.dart:80:55)
+<asynchronous suspension>
+#15     FlutterCommand._sendUsage (package:flutter_tools/src/runner/flutter_command.dart:411:58)
+<asynchronous suspension>
+#16     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:392:17)
+<asynchronous suspension>
+#17     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#18     _rootRun (dart:async/zone.dart:1124:13)
+#19     _CustomZone.run (dart:async/zone.dart:1021:19)
+#20     _runZoned (dart:async/zone.dart:1516:10)
+#21     runZoned (dart:async/zone.dart:1463:12)
+#22     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#23     FlutterCommand.run (package:flutter_tools/src/runner/flutter_command.dart:375:20)
+#24     CommandRunner.runCommand (package:args/command_runner.dart:197:27)
+<asynchronous suspension>
+#25     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:396:21)
+<asynchronous suspension>
+#26     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#27     _rootRun (dart:async/zone.dart:1124:13)
+#28     _CustomZone.run (dart:async/zone.dart:1021:19)
+#29     _runZoned (dart:async/zone.dart:1516:10)
+#30     runZoned (dart:async/zone.dart:1463:12)
+#31     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#32     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:356:19)
+<asynchronous suspension>
+#33     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:112:25)
+#34     new Future.sync (dart:async/future.dart:224:31)
+#35     CommandRunner.run (package:args/command_runner.dart:112:14)
+#36     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:242:18)
+#37     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:22)
+<asynchronous suspension>
+#38     _rootRun (dart:async/zone.dart:1124:13)
+#39     _CustomZone.run (dart:async/zone.dart:1021:19)
+#40     _runZoned (dart:async/zone.dart:1516:10)
+#41     runZoned (dart:async/zone.dart:1500:12)
+#42     run.<anonymous closure> (package:flutter_tools/runner.dart:60:18)
+<asynchronous suspension>
+#43     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#44     _rootRun (dart:async/zone.dart:1124:13)
+#45     _CustomZone.run (dart:async/zone.dart:1021:19)
+#46     _runZoned (dart:async/zone.dart:1516:10)
+#47     runZoned (dart:async/zone.dart:1463:12)
+#48     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#49     runInContext (package:flutter_tools/src/context_runner.dart:56:24)
+<asynchronous suspension>
+#50     run (package:flutter_tools/runner.dart:51:10)
+#51     main (package:flutter_tools/executable.dart:62:9)
+<asynchronous suspension>
+#52     main (file:///Users/tuwaniemorgan/documents/flutter/packages/flutter_tools/bin/flutter_tools.dart:8:3)
+#53     _startIsolate.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:299:32)
+#54     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:172:12)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.7.8+hotfix.3, on Mac OS X 10.14.5 18F132, locale en-JM)
+    • Flutter version 1.7.8+hotfix.3 at /Users/tuwaniemorgan/Documents/flutter
+    • Framework revision b712a172f9 (2 weeks ago), 2019-07-09 13:14:38 -0700
+    • Engine revision 54ad777fd2
+    • Dart version 2.4.0
+
+[✗] Android toolchain - develop for Android devices
+    ✗ Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, set ANDROID_HOME to that location.
+      You may also want to add it to your PATH environment variable.
+
+
+[✓] Xcode - develop for iOS and macOS (Xcode 11.0)
+    • Xcode at /Applications/Xcode-beta.app/Contents/Developer
+    • Xcode 11.0, Build version 11M362v
+    • CocoaPods version 1.7.4
+
+[✓] iOS tools - develop for iOS devices
+    • ios-deploy 1.9.4
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+
+[✓] Connected device (1 available)
+    • Tuwanie's iphone💕 • 59aa6475ba84470e6e099f4e8ae4a2a932ad2a94 • ios • iOS 12.3.1
+
+! Doctor found issues in 2 categories.
+```
